@@ -1,0 +1,22 @@
+version: '3.8'
+
+# To run: `docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d`
+
+services:
+  backend:
+    build:
+      target: production
+    environment:
+      - GIN_MODE=release
+      - LOG_LEVEL=error
+    restart: always
+
+  frontend:
+    build:
+      target: production
+    restart: always
+    # You might also map to internal port 80 and let a reverse proxy (like another nginx or traefik) handle SSL and public routing
+
+  db:
+    restart: always
+    # In production, volume data mappings should ideally point to highly available storage
