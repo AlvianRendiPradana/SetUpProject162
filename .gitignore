@@ -1,53 +1,24 @@
-# ========================
-# OS / Editor Files
-# ========================
+*.log
 .DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.swp
-
-# ========================
-# Environment Variables
-# ========================
 .env
-.env.local
-.env.*.local
-
-# ========================
-# Node.js / Vite (Frontend)
-# ========================
-node_modules/
-dist/
-dist-ssr/
-*.local
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# ========================
-# Go (Backend)
-# ========================
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binary, built with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Hot reloading generated bins
-tmp/
-.air/
-backend/main
-
-# ========================
-# Docker
-# ========================
-.docker/
-docker-compose.override.yml
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+Homestead.json
+Homestead.yaml
+Thumbs.db
