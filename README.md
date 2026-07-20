@@ -1,2 +1,1 @@
-﻿Laravel Logo
-Build Status Total Downloads Latest Stable Version License
+https://laravel.com/
